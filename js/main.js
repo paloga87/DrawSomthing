@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.container').hide().fadeIn(2500);
 });
 
-$('.btn-primary').on('click touchstart', function(){
+$('.btn-primary').click(function(){
   capture();
 });
 
