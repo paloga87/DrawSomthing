@@ -10,7 +10,7 @@ var letters;
 var arrayOfIdx = [];
 //Funcion Anagramas
 function capture(){
-  letters = document.getElementById("letters").value.split("").sort();  
+  letters = document.getElementById("letters").value.toLowerCase().split("").sort();  
   // Recorre las palabras del diccionario
   for (var i = 0; i < dictionary.length;  i++){   
     // Recorre las letras de las palabras del diccionario
