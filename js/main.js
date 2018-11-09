@@ -1,7 +1,10 @@
 $(document).ready(function(){
   $('.container').hide().fadeIn(2500);
-})
-$('.btn-primary').on('touchstart click', capture());
+});
+
+$('.btn-primary').on('click touchstart', function(){
+  capture();
+});
 
 var letters;
 var arrayOfIdx = [];
@@ -27,6 +30,13 @@ function capture(){
           
           if (secIdx === -1) {
             arrayOfIdx.push(idx);
+            if (j == dictionary[i].length - 1) {
+              var words = document.getElementById('words');
+              // las incluye en el HTML
+              var newWord = document.createElement('li');
+              newWord.textContent = dictionary[i];
+              words.appendChild(newWord);
+            }
           }else{
             j = dictionary[i].length + 1;
             arrayOfIdx = [];
@@ -34,13 +44,7 @@ function capture(){
         }
         console.log(noAccent);
         // Filtra las plabras que cumplen con todas las letras
-        if (j == dictionary[i].length - 1) {
-          var words = document.getElementById('words');
-          // las incluye en el HTML
-          var newWord = document.createElement('li');
-          newWord.textContent = dictionary[i];
-          words.appendChild(newWord);
-        }
+        
       }else{
         j = dictionary[i].length + 1;
         arrayOfIdx = [];
