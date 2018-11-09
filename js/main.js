@@ -14,11 +14,9 @@ function capture(){
   // Recorre las palabras del diccionario
   for (var i = 0; i < dictionary.length;  i++){   
     // Recorre las letras de las palabras del diccionario
-    console.log(dictionary[i]);
     for (var j = 0; j < dictionary[i].length;  j++){
       // Quita las tildes
       var noAccent = removeAccent(dictionary[i][j]);
-      //console.log('letra: ' + noAccent);
       // Verifica que las letras coincidan
       var idx = letters.indexOf(noAccent);
       // Filtra las que no coinciden
@@ -42,7 +40,6 @@ function capture(){
             arrayOfIdx = [];
           }
         }
-        console.log(noAccent);
         // Filtra las plabras que cumplen con todas las letras
         
       }else{
