@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('.container').hide().fadeIn(2500);
 })
+$('#whatever').on('touchstart click', capture());
 
 var letters;
 var arrayOfIdx = [];
