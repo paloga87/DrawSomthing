@@ -1,0 +1,12 @@
+header, footer, .btn-primary{
+	background: rgb(111, 55, 81);
+}
+header, footer{
+	height: 50px;
+}
+.primary{
+	min-height: -webkit-fill-available;
+}
+.btn-primary{
+	border: none;
+}
