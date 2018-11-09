@@ -42,4 +42,3 @@ if (str.charAt(i)=="ú") str = str.replace(/ú/,"u");
 return str; 
 } 
 
-//alert(quitaAcentos(frase)) 
