@@ -1,3 +1,6 @@
+$(document).ready(function(){
+  $('.container').hide().fadeIn(2500);
+})
 
 var letters;
 
