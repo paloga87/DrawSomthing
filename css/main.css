@@ -9,7 +9,14 @@ header, footer{
 }
 .btn-primary{
 	border: none;
+	transition: background-color 0.5s ease-in-out;
 }
 ul{
 	margin-top: 30px;
+}
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
