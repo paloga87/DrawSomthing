@@ -1,6 +1,4 @@
-# DrawSomenthing
-
-Este repositorio lo realicé como prueba de ingreso para ID+W
+# Anagramas
 
 
 Para ver el juego, click en el enlace 
